@@ -3,6 +3,8 @@ import warnings
 warnings.filterwarnings('ignore', category=FutureWarning)
 from tensorflow.python.util import deprecation
 deprecation._PRINT_DEPRECATION_WARNINGS = False
+import tensorflow as tf
+assert tf.__version__ < '2.0'
 
 import os
 import sys
