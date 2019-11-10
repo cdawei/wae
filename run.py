@@ -1,3 +1,9 @@
+# discard warnings
+import warnings
+warnings.filterwarnings('ignore', category=FutureWarning)
+from tensorflow.python.util import deprecation
+deprecation._PRINT_DEPRECATION_WARNINGS = False
+
 import os
 import sys
 import logging
